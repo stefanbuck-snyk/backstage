@@ -1,5 +1,20 @@
 # @backstage/frontend-plugin-api
 
+## 0.5.0-next.3
+
+### Minor Changes
+
+- d4149bf: **BREAKING**: Renamed the `app/router` extension to `app/root`.
+
+### Patch Changes
+
+- b2d370e: Exposed `createComponentRef`, and ensured that produced refs and feature bits have a `toString` for easier debugging
+- 7d63b32: Accepts sub route refs on the new `createPlugin` routes map.
+- c97fa1c: Added `elements` and `wrappers` inputs to `app/root`, that let you add things to the root of the React tree above the layout. You can use the `createAppRootElementExtension` and `createAppRootWrapperExtension` extension creator, respectively, to conveniently create such extensions.
+- Updated dependencies
+  - @backstage/core-components@0.13.10-next.1
+  - @backstage/core-plugin-api@1.8.2-next.0
+
 ## 0.4.1-next.2
 
 ### Patch Changes
